@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('galeri', function (Blueprint $table) {
             $table->id();
-            $table->string('path');
             $table->string('nama_galeri');
+            $table->string('path');
             $table->string('galeri_seo')->nullable();
             $table->text('keterangan')->nullable();
             $table->string('foto');

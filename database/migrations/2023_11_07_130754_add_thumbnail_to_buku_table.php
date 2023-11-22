@@ -14,17 +14,12 @@ return new class extends Migration
         Schema::table('buku', function (Blueprint $table) {
             $table->string('filename')->nullable();
             $table->string('filepath')->nullable();
-            //
         });
     }
 
     /**
      * Reverse the migrations.
-     * 
-     * @return void
      */
-    
-
     public function down(): void
     {
         Schema::table('buku', function (Blueprint $table) {
